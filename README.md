@@ -23,8 +23,8 @@ In this assignment, you will implement a program which simulates the problem des
  	- Read the items in stock list (1 seconds)
 	- If the previous order has not yet been done, loop to (a)
  	- With the probability 0.5, the customer will order as follows:
-  		- Randomly choose an item, randomly choose an amount (between 1 and 4);
-    		- Write the order to the “buying board” under customer index and set value of Done to false.
+  		* Randomly choose an item, randomly choose an amount (between 1 and 4);
+    		* Write the order to the “buying board” under customer index and set value of Done to false.
       	- With the probability 0.5, the customer does not order!
       	- Loop to (a)
 4.	Sale Associate process:
@@ -33,8 +33,8 @@ In this assignment, you will implement a program which simulates the problem des
   	- Read an order from the “buying board”
    	- If there are no orders (Done is true), loop to (a)
     	- If there is row that isn’t Done (value is false):
-     		- Add the amount ordered to the totals for the item in main menu
-       		- Mark the order as Done (set to true)
+     		* Add the amount ordered to the totals for the item in main menu
+       		* Mark the order as Done (set to true)
         - Loop to (a)
 
 When a process is writing to a shared memory it must have unique access, with no other writers and no readers. This is the classic readers-writers problem.  Synchronization between sale assistants and customers should be done with the help of semaphores.
