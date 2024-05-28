@@ -18,7 +18,7 @@ In this assignment, you will implement a program which simulates the problem des
 	c.	The main process should create any needed semaphores and start all sub processes. Any sub process each type {Customer or Sale Assistant} should have an index according to the creation order.
 	d.	At the end of simulation time, main process should wait for termination of all sub processes, and print general information about the simulation: the total counts of each item ordered, the total income of the fashion store during the simulation.
 2.	Customer process:
-	a.	If not elapsed simulation time
+	- If not elapsed simulation time
 	b.	Sleep for 3 to 6 seconds, randomly
 	c.	Read the items in stock list (1 seconds)
 	d.	If the previous order has not yet been done, loop to (a) 
@@ -27,7 +27,7 @@ In this assignment, you will implement a program which simulates the problem des
 		ii.	Write the order to the “buying board” under customer index and set value of Done to false.
 	f.	With the probability 0.5, the customer does not order!
 	g.	Loop to (a)
-3.	Sale Associate process:
+4.	Sale Associate process:
 	a.	If not elapsed simulation time
 	b.	Sleep for 1 to 2 seconds, randomly
 	c.	Read an order from the “buying board”
